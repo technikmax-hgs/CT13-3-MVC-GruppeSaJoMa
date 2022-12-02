@@ -1,4 +1,4 @@
-package MVCTable;
+package gui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
@@ -51,7 +51,7 @@ public class controller {
 		this.model.deleteRow(row);
 	}
 	private void save() {
-		String file = "C:\\Users\\m.roensch\\Desktop\\MVCTable\\src/person.json";
+		String file = "Dokumente";
 		Path path = Paths.get(file);
 		
 		try (Writer writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {

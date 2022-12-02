@@ -1,6 +1,4 @@
-package MVCTable;
-
-import com.google.gson.Gson;
+package gui;
 
 public class app {
 	public static void main (String[] args) {
@@ -10,7 +8,5 @@ public class app {
 		controller c = new controller(m, v);
 		c.initController();
 		v.setVisible(true);
-		
-		m.data = gson.fromJson("C:\\Users\\m.roensch\\Desktop\\MVCTable\\src/person.json");
 	}
 }

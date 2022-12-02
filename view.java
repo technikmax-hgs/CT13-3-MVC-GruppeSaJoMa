@@ -1,4 +1,4 @@
-package MVCTable;
+package gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -19,6 +19,8 @@ public class view extends JFrame {
 	private JButton btnNewButton_1;
 	private JButton btnNewButton_2;
 	private JButton btnNewButton_3;
+	private JPanel panel_1;
+	private JButton btnNewButton_4;
 
 	public view() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,18 +30,25 @@ public class view extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
-		table = new JTable();
-		contentPane.add(table, BorderLayout.CENTER);
-		
 		panel = new JPanel();
-		contentPane.add(panel, BorderLayout.SOUTH);
-		panel.setLayout(new GridLayout(1, 2, 0, 0));
+		panel.setLayout(new BorderLayout(0,0));
+		contentPane.add(panel, BorderLayout.WEST);
+		
+		table = new JTable();
+		panel.add(table, BorderLayout.WEST);
+		
+		panel_1 = new JPanel();
+		panel.add(panel_1, BorderLayout.SOUTH);
+		panel_1.setLayout(new GridLayout(1, 2, 0, 0));
 		
 		btnNewButton_2 = new JButton("Append");
-		panel.add(btnNewButton_2);
+		panel_1.add(btnNewButton_2);
 		
 		btnNewButton_3 = new JButton("Delete");
-		panel.add(btnNewButton_3);
+		panel_1.add(btnNewButton_3);
+		
+		btnNewButton_4 = new JButton("Add");
+		panel_1.add(btnNewButton_4);
 		
 	
 	}

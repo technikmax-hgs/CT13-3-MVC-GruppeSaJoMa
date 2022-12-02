@@ -1,4 +1,4 @@
-package MVCTable;
+package gui;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

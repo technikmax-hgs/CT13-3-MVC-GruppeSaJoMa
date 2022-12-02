@@ -1,4 +1,4 @@
-package MVCTable;
+package gui;
 
 
 public class Person {
